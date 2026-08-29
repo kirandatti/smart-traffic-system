@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Traffic Congestion Prediction System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🚦 AI Smart Traffic Congestion Prediction</h1>
+    <p>Live traffic prediction & signal optimization dashboard</p>
+  </header>
+
+  <main>
+    <section id="map-section">
+      <h2>Live Traffic Map</h2>
+      <div id="map"></div>
+    </section>
+
+    <section id="stats-section">
+      <h2>Predicted Congestion</h2>
+      <div id="stats-cards">
+        <div class="card">
+          <h3>Intersection A</h3>
+          <p id="congestion-a">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Intersection B</h3>
+          <p id="congestion-b">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Signal Timing</h3>
+          <p id="signal-status">Loading...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
