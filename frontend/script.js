@@ -11,7 +11,7 @@ L.marker([12.9800, 77.6000]).addTo(map).bindPopup("Intersection B");
 // Fetch REAL data from backend
 async function loadTrafficData() {
   try {
-    const response = await fetch('http://127.0.0.1:5000/predict');
+    const response = await fetch('https://smart-traffic-system-g74d.onrender.com/predict');
     const data = await response.json();
 
     document.getElementById('congestion-a').innerText =
